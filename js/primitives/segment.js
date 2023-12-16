@@ -4,6 +4,9 @@ class Segment {
     this.p2 = p2;
   }
 
+  length() {
+    return distance(this.p1, this.p2);
+  }
   equals(segment) {
     return this.includes(segment.p1) && this.includes(segment.p2);
   }
